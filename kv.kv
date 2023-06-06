@@ -1,0 +1,21 @@
+<Button>
+    font_name: "images/CuteFont.ttf"
+    font_size: 40
+    background_color: (.157, .455, .753, 1)
+    background_normal: ""
+    background_down: ""
+    canvas.before:
+        Color:
+            rgba: (0, 0, 0, 1)
+        Line:
+            width: 2
+            rectangle: self.x, self.y, self.width, self.height
+
+Panel:
+	btn: btn
+
+	Button:
+		id: btn
+		text: "START"
+		on_press:
+			root.change_button()
